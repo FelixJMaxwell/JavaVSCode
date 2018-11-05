@@ -1,5 +1,5 @@
 # JavaVSCode
->Esto esta escrito para ser compilado en Visual Studio Code, se puede utilizar Netbeans o Eclipse sin problemas (no probado), para compilar y correr se deben ejecutar los tareas del archivo tasks.json, en la carpeta .vscode
+>Esto esta escrito para ser compilado en Visual Studio Code, se puede utilizar Netbeans o Eclipse sin problemas (no probado), para compilar y correr se deben ejecutar los tareas del archivo tasks.json, en la carpeta .vscode ~~Los comentarios tachados de esta forma son mera opinion personal, no es necesario estar de acuerdo, cada quien tiene su forma de ver o hacer las cosas, si tienes alguna sugerencia para mejorar lo aqui expuesto hasmelo saber~~
 
 >[Base para este repositorio](https://beginnersbook.com/java-tutorial-for-beginners-with-examples/)
 
