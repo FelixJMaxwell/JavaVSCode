@@ -177,7 +177,6 @@ _Tomando en cuenta las definiciones anteriores debemos crear una clase **Padre o
 
 #### Ejemplo
 
-Teniendo las siguientes clases:  
 | Futbolista | Entrenador | Masajista |
 |:-:|:-:|:-:|
 | **Variables** | **Variables** | **Variables** |
