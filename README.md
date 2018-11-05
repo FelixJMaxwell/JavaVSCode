@@ -196,7 +196,7 @@ Teniendo las siguientes clases:
 Si pasamos lo anterior a codigo, tendriamos que repetir las variables y metodos que tienen en comun varias veces. Si tomamos en cuenta dichos valores repetidos en cada clase, podemos crear una clase padre y darle los valores que se repiten para solamente crear clases hijos y extender la clase padre.
 
 Codigo de ejemplo, sin POO:
-![imagen](\SinPOO.png)
+![imagen](https://raw.githubusercontent.com/FelixJMaxwell/JavaVSCode/master/SinPOO.png)
 
 ### Clase padre o Superclase
 |Persona|
@@ -221,4 +221,4 @@ Codigo de ejemplo, sin POO:
 |entrenar(): void|dirigirEntrenamiento(): void|
 
 Codigo de ejemplo, con POO:
-![imagen](\ConPOO.png)
+![imagen](https://raw.githubusercontent.com/FelixJMaxwell/JavaVSCode/master/ConPOO.png)
