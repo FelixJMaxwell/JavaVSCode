@@ -190,8 +190,8 @@ Teniendo las siguientes clases:
 | Demarcacion: String | Concentracion(): void | Concentracion(): void |
 | Concentracion(): void | Viajar(): void | Viajar(): void |
 | Viajar(): void | dirigirPartido(): void | darMasaje(): void |
-| JugarPartido(): void | dirigirEntrenamiento(): void ||
-| Entrenar(): void |||
+| JugarPartido(): void | dirigirEntrenamiento(): void |
+| Entrenar(): void |
 
 Si pasamos lo anterior a codigo, tendriamos que repetir las variables y metodos que tienen en comun varias veces. Si tomamos en cuenta dichos valores repetidos en cada clase, podemos crear una clase padre y darle los valores que se repiten para solamente crear clases hijos y extender la clase padre.
 
