@@ -162,3 +162,63 @@ Si se cambia el valor de apellido, sera el mismo para todos los objetos de la cl
 - Las clases solo pueden ser estaticas si son declaradas dentro de otra clase no estatica
 
 ~~(Tengo que agregar mas cosas referentes al tipo _static_ pero realmente me es complicado de entender la teoria sobre esta parte, en general, se podria decir que static da cierto grado de libertad para poder usar los metodos, clases y variables, sin tener que crear algun objeto que haga referencia a la clase que los contiene)~~
+
+### Herencia
+>[Ejemplos extraidos de aqui](https://jarroba.com/herencia-en-la-programacion-orientada-a-objetos-ejemplo-en-java/)
+
+> La Herencia es uno de los _cuatro_ pilares de la programación orientada a objetos (POO) junto con la _**Abstracción**, **Encapsulación** y **Polimorfismo**_.
+
+Definiciones: 
+> - **La herencia es un mecanismo que permite la definición de una clase a partir de la definición de otra ya existente.**  
+> - **La herencia permite compartir automáticamente métodos y datos entre clases, subclases y objetos.**
+> - **la herencia es permitir la creación de  nuevas clases basadas en clases existentes.**
+
+_Tomando en cuenta las definiciones anteriores debemos crear una clase **Padre o Superclase** que contendra **atributos**, **variables** y **metodos**, a su ves crearemos clases denominadas como "hijas" que heredan de la clase padre todo lo mencionado anteriormente, sin embargo las clases hijas no heredan metodos o atributos privados_
+
+#### Ejemplo
+
+Teniendo las siguientes clases:  
+| Futbolista | Entrenador | Masajista |
+|:-:|:-:|:-:|
+| **Variables** | **Variables** | **Variables** |
+| id: Integer | id: Integer | id: Integer |
+| Nombre: String | Nombre: String | Nombre: String |
+| Apellidos: String | Apellidos: String | Apellidos: String |
+| Edad: Integer | Edad: Integer | Edad: Integer |
+| Dorsal: Integer | idFederacion: String | Titulacion: String |
+| **Metodos** | **Metodos** | **Metodos** |
+| Demarcacion: String | Concentracion(): void | Concentracion(): void |
+| Concentracion(): void | Viajar(): void | Viajar(): void |
+| Viajar(): void | dirigirPartido(): void | darMasaje(): void |
+| JugarPartido(): void | dirigirEntrenamiento(): void |
+| Entrenar(): void |
+
+Si pasamos lo anterior a codigo, tendriamos que repetir las variables y metodos que tienen en comun varias veces. Si tomamos en cuenta dichos valores repetidos en cada clase, podemos crear una clase padre y darle los valores que se repiten para solamente crear clases hijos y extender la clase padre.
+
+Codigo de ejemplo, sin POO:
+![imagen](\SinPOO.png)
+
+### Clase padre o Superclase
+|Persona|
+|:-:|
+|**Variables**|
+|id: Integer|
+|Nombre: String|
+|Apellidos: String|
+|Edad: Integer|
+|**Metodos**|
+|Concentrarse(): void|
+|Viajar(): void|
+
+#### Clases hijas
+|Futbolista|Entrenador|Masajista|
+|:-:|:-:|:-:|
+|**Variables**|**Variables**|**Variables**|
+|dorsal: Integer|idFederacion(): String|titulacion: String|
+|demarcacion: String||añosExperiencia: integer|
+|**Metodos**|**Metodos**|**Metodos**|
+|jugarPartido(): void|dirigirPartido(): void|darMasaje(): void|
+|entrenar(): void|dirigirEntrenamiento(): void|
+
+Codigo de ejemplo, con POO:
+![imagen](\ConPOO.png)
