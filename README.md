@@ -1,5 +1,5 @@
 # JavaVSCode
->Esto esta escrito para ser compilado en Visual Studio Code, se puede utilizar Netbeans o Eclipse sin problemas (no probado), para compilar y correr se deben ejecutar los tareas del archivo tasks.json, en la carpeta .vscode ~~Los comentarios tachados de esta forma son mera opinion personal, no es necesario estar de acuerdo, cada quien tiene su forma de ver o hacer las cosas, si tienes alguna sugerencia para mejorar lo aqui expuesto hasmelo saber~~
+>Esto esta escrito para ser compilado en Visual Studio Code, se puede utilizar Netbeans o Eclipse sin problemas (no probado), para compilar y correr se deben ejecutar los tareas del archivo tasks.json, en la carpeta .vscode
 
 >[Base para este repositorio](https://beginnersbook.com/java-tutorial-for-beginners-with-examples/)
 
@@ -161,7 +161,10 @@ Si se cambia el valor de apellido, sera el mismo para todos los objetos de la cl
 
 - Las clases solo pueden ser estaticas si son declaradas dentro de otra clase no estatica
 
-~~(Tengo que agregar mas cosas referentes al tipo _static_ pero realmente me es complicado de entender la teoria sobre esta parte, en general, se podria decir que static da cierto grado de libertad para poder usar los metodos, clases y variables, sin tener que crear algun objeto que haga referencia a la clase que los contiene)~~
+| _Resumen / Opinion Personal_ |
+|--|
+| (Tengo que agregar mas cosas referentes al tipo _static_ pero realmente me es complicado de entender la teoria sobre esta parte, en general, se podria decir que static da cierto grado de libertad para poder usar los metodos, clases y variables, sin tener que crear algun objeto que haga referencia a la clase que los contiene, **Ahora de acuerdo a todos los tutoriales que dictan "Programacion basica", lo anterior una ves comprendido en un lenguaje se puede aplicar a todos los lenguajes, mas que aprender lo anterior es importante conseguir una buena logica**) |
+
 
 ### Herencia
 >[Ejemplos extraidos de aqui](https://jarroba.com/herencia-en-la-programacion-orientada-a-objetos-ejemplo-en-java/)
@@ -221,3 +224,13 @@ Codigo de ejemplo, sin POO:
 
 Codigo de ejemplo, con POO:
 ![imagen](https://raw.githubusercontent.com/FelixJMaxwell/JavaVSCode/master/ConPOO.png)
+
+
+| _Resumen / Opinion Personal_ |
+|--|
+| No se me da algo de hueva la POO/OOP (Demasiados archivos para crear) aunque supongo que debo tener en **consideracion** el hecho de los nombres de los mismos archivos (xD) que mi ejemplo es un desmadre de nombres raros, largos y nada que ver con lo que representan |
+
+Ejemplos de codigo son los archivos:
+- OOP_2_Herencia_Padre  
+- OOP_2_Herencia_main  
+- OOP_2_Herencia_Hja_**n**
