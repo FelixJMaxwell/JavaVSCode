@@ -225,12 +225,25 @@ Codigo de ejemplo, sin POO:
 Codigo de ejemplo, con POO:
 ![imagen](https://raw.githubusercontent.com/FelixJMaxwell/JavaVSCode/master/ConPOO.png)
 
+Ejemplos de codigo son los archivos:
+- OOP_2_Herencia_Padre
+    - Contiene las variables, metodos, etc, que se considera son "comunes" entre varios elementos u objetos
+- OOP_2_Herencia_main  
+    - Desde aqui se ejecuta el programa, se crean los objetos y las referencias a las distintas clases padre o hijas
+- OOP_2_Herencia_Hja_**n**
+    - Desde aca se extiende la clase padre, si el objeto a crear finalmente tiene alguna relacion con los daatos albergados en la clase padre
+
+_Anotacion importante_
+Los **Nombres** usados en los archivos son meramente como "ejemplo" (uno muy malo), la clase padre debe tener variables o metodos que servirian como **"comun denominador"** de todos los objetos; en este ejemplo deberia llamarse "Persona", puesto que todas las personas tienen en comun, nombre, apellido, genero, edad mas no todas tienen en comun, profesiones, educacion, etc.  
+
+Por lo tanto se debe extender la clase Padre (Persona) en diferentes clases por ejemplo:
+- clase hija: Jugadores
+    - A la que se le pueden agregar mas variables como: "TipoJugador" o "TipoJuego"
+- clase hija: Profesionista
+    - A la que se le pueden agregar mas variables como: "EstudiosRealizados", "GradoAcademico"
+
+De igual forma se puede construir una clase Padre: Mascota, con sus respectivas clases hijas.
 
 | _Resumen / Opinion Personal_ |
 |--|
 | No se me da algo de hueva la POO/OOP (Demasiados archivos para crear) aunque supongo que debo tener en **consideracion** el hecho de los nombres de los mismos archivos (xD) que mi ejemplo es un desmadre de nombres raros, largos y nada que ver con lo que representan |
-
-Ejemplos de codigo son los archivos:
-- OOP_2_Herencia_Padre  
-- OOP_2_Herencia_main  
-- OOP_2_Herencia_Hja_**n**
