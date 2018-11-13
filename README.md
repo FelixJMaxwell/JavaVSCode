@@ -247,3 +247,177 @@ De igual forma se puede construir una clase Padre: Mascota, con sus respectivas 
 | _Resumen / Opinion Personal_ |
 |--|
 | No se me da algo de hueva la POO/OOP (Demasiados archivos para crear) aunque supongo que debo tener en **consideracion** el hecho de los nombres de los mismos archivos (xD) que mi ejemplo es un desmadre de nombres raros, largos y nada que ver con lo que representan |
+
+> Siguiendo con teoria de POO
+
+### Sobrecarga de metodos (Method Overloading)
+
+ - Permite a una clase tener mas de un metodo con el mismo nombre si sus argumentos/parametros son diferentes, es similar a la sobrecarga del constructor.
+
+##### Ejemplo: Diferente numero de parametros
+
+```Java
+class Sobrecarga{
+    public void hello(char c){
+        System.out.println(c);
+    }
+
+    public void hello(char c, int num){
+        System.out.println(c + " " + num);
+    }
+}
+
+class Ejemplo{
+    public static void main(String args[]){
+        Sobrecarga obj = new Sobrecarga();
+        obj.hello("a");
+        obj.hello("a", 10);
+    }
+}
+ ```
+
+    Salida:
+        a
+        a 10
+
+##### Ejemplo: Misma cantidad de parametros con diferentes tipos
+
+```java
+class SobrecargaDos{
+    public void World(char c){
+        System.out.println(c);
+    }
+
+    public void World(int c){
+        System.out.println(c);
+    }
+}
+
+class EjemploDos{
+    public static void main (String args[]){
+        SobrecargaDos obj = new SobrecargaDos();
+        obj.World("a");
+        obj.World(10);
+    }
+}
+```
+
+    Salida:
+        a
+        10
+
+##### Ejemplo: Misma cantidad de parametros diferente orden
+
+```java
+class SobrecargaTres{
+    public void Something(char c, int num){
+        System.out.println("first test for overloading");
+    }
+
+    public void Something(int num, char c){
+        System.out.println("Second test for overloading");
+    }
+}
+
+class EjemploTres{
+    SobrecargaTres obj = new SobrecargaTres();
+    obj.Something("a", 10);
+    obj.Something(11, "b");
+}
+```
+
+    Salida:
+        first test for overloading
+        Second test for overloading
+
+### Anulacion de metodos (Method Override)
+
+> Extra: Lo dejare como anulacion, creo que tambien puede ser sobre escritura pero ni el traductor de google me da la razon.
+
+Definiciones:
+>- Declarar un metodo en una **clase hija** cuando este metodo ya esta presente en la **clase Padre** es conocido como anulacion (override)  
+>- La anulacion es util o es usada para que la clase hija pueda tener su propia implementacion.
+
+###### ~~Estupida classpath~~
+
+Reglas de la anulacion de metodos
+>- Los parametros o argumentos del metodo que sera sobreescrito deben ser del mismo tipo y tener la misma cantidad de parametros asi como la secuencia en que estan declarados los mismos.
+>- Solo se pueden anular los metodos publicos
+>- No se pueden anular metodos de tipo _final_, _privados_ o _static_, estos son especificos de la clase **Padre**.
+
+Codigo de ejemplo:
+```java
+Clase Human:
+
+class OOP_3_Human{
+    public void eat(){
+        System.out.println("Human is eating");
+    }
+}
+```
+
+```java
+Clase Boy:
+
+class OOP_3_Boy{
+    public void eat(){
+        System.out.println("Boy is eating");
+    }
+
+    public static void main(String[] args){
+        OOP_3_Boy obj = new OOP_3_Boy();
+        obj.eat();
+    }
+}
+```
+
+    Lo anterior da como resultado:
+        "Boy is eating"
+
+>Ventajas de la anulacion de metodos:  
+>- Una clase puede dar su propia implementacion de un metodo sin modificar la implementacion de la clase padre.
+>- Si una clase tiene diferentes **Hijos** de una misma clase **Padre**, los _hijos_ pueden usar la implementacion de la clase **PERO** en caso de necesitar una implementacion diferente del mismo metodo se puede sobreescribir sin modificar la implementacion de la clase padre.
+
+&nbsp;
+
+|Resumen / Opinion Personal|
+|:-:|
+|No agregue codigos de ejemplo para la primera parte: Sobrecarga, Es bastante sencillo de la teoria detras de esta parte debido a que como lo mencione arriba es parecida a los constructores con diferentes parametros e implementaciones.
+No he terminado de entender completamente la funcion o teoria detras de la anulacion de metodos pero una forma sencilla de decirlo es el segundo punto de las ventajas citadas arriba.|
+|**Hace falta revisar la parte de polimorfismo en tiempo de ejecución** ~~Por si lo anterior no habia terminado de entenderlo~~|
+
+Ejemplo de _Polimorfismo en tiempo de ejecución_
+
+```java
+class ABC{
+   //Overridden method
+   public void disp()
+   {
+	System.out.println("disp() method of parent class");
+   }	   
+}
+class Demo extends ABC{
+   //Overriding method
+   public void disp(){
+	System.out.println("disp() method of Child class");
+   }
+   public void newMethod(){
+	System.out.println("new method of child class");
+   }
+   public static void main( String args[]) {
+	/* When Parent class reference refers to the parent class object
+	 * then in this case overridden method (the method of parent class)
+	 *  is called.
+	 */
+	ABC obj = new ABC();
+	obj.disp();
+
+	/* When parent class reference refers to the child class object
+	 * then the overriding method (method of child class) is called.
+	 * This is called dynamic method dispatch and runtime polymorphism
+	 */
+	ABC obj2 = new Demo();
+	obj2.disp();
+   }
+}
+```
