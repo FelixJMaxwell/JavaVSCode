@@ -421,3 +421,27 @@ class Demo extends ABC{
    }
 }
 ```
+
+## Uso de la libreria IO
+
+|Resumen / Opinion personal|
+|:-:|
+|Tema algo aparte, se revisa la libreria IO para creacion, lectura, escritura y eliminación de archivos, se trabaja unicamente con archivos de texto plano (txt)
+Siguiendo un poco por el hecho de que considero esto como un repaso del lenguaje Java, igual continuare agregando otras secciones mas adelante|
+
+### Archivos para estos ejercicios:
+- IO_1.java
+    - Creacion de archivos
+- IO_2.java
+    - Lectura de archivos, mostrar texto del archivo en consola
+- IO_3.java
+    - Escritura de archivos borrando el contenido previo
+- IO_4.java
+    - Escritura de archivos sin borrar el contenido del mismo (append)
+- IO_5.java
+    - Borrado de archivos dada una direccion
+
+
+&nbsp;
+    
+> No pongo el codigo de los archivos como snipet porque haria mas grande todo esto, ademas el mismo puede ser consultado arriba
