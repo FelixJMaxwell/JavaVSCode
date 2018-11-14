@@ -430,15 +430,15 @@ class Demo extends ABC{
 Siguiendo un poco por el hecho de que considero esto como un repaso del lenguaje Java, igual continuare agregando otras secciones mas adelante|
 
 ### Archivos para estos ejercicios:
-- IO_1.java
+- [IO_1.java](https://github.com/FelixJMaxwell/JavaVSCode/blob/master/IO_1.java)
     - Creacion de archivos
-- IO_2.java
+- [IO_2.java](https://github.com/FelixJMaxwell/JavaVSCode/blob/master/IO_2.java)
     - Lectura de archivos, mostrar texto del archivo en consola
-- IO_3.java
+- [IO_3.java](https://github.com/FelixJMaxwell/JavaVSCode/blob/master/IO_3.java)
     - Escritura de archivos borrando el contenido previo
-- IO_4.java
+- [IO_4.java](https://github.com/FelixJMaxwell/JavaVSCode/blob/master/IO_4.java)
     - Escritura de archivos sin borrar el contenido del mismo (append)
-- IO_5.java
+- [IO_5.java](https://github.com/FelixJMaxwell/JavaVSCode/blob/master/IO_5.java)
     - Borrado de archivos dada una direccion
 
 
